@@ -19,3 +19,6 @@ _start:
   mov rax, 60         ;exit
   mov rdx, 0          ;return 0
   syscall
+
+;compile: nasm -f elf64 -o hello.o hello.asm
+;link: ld hello.o -o hello
